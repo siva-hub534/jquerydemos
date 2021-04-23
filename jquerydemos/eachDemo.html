@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery each demo</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+
+           // $('li').css('color','red');
+
+           /*
+            $('li').each(function(){
+
+                console.log($(this).text())
+                var value = $(this).text();
+
+                if(value == 'UK'){
+                    $(this).css('color','red')
+                } 
+              
+            })
+          */
+
+             $('li').each(function(index){
+
+                console.log('Index = '+ index + ' Value =' + $(this).text())
+             });
+            
+             
+
+        })
+    </script>
+</head>
+<body>
+    
+    <ul>
+        <li>US</li>
+        <li>India</li>
+        <li>Australia</li>
+        <li>Canada</li>
+        <li>UK</li>
+    </ul>
+</body>
+</html>

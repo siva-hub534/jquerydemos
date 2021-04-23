@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Selector Demo</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+          //console.log($("td").length);
+         // $("tr").css('background-color','red')
+
+         // Apply yellow background color to all div span and anchor tags
+         //$("div,span,a").css('background-color','yellow');
+
+         // Apply red background color to all anchor elements that are decendants of div element.
+        // $("div a").css('background-color','red');
+
+        //Apply color to odd and even rows
+        //$("tr:even").css('background-color','gray');
+        //$("tr:odd").css('background-color','yellow');
+
+        //Apply color to odd and even rows to table1 alone
+        $("#table1 tr:even").css('background-color','gray');
+        $("#table1 tr:odd").css('background-color','yellow');
+        });
+    </script>
+</head>
+<body>
+
+    <table id="table1" style="border: 1px solid black;">
+        <tr>
+            <td>C#</td>
+            <td>ASP.NET</td>
+            <td>SQL Server</td>
+        </tr>
+        <tr>
+            <td>ADO.NET</td>
+            <td>ASP.NET MVC</td>
+            <td>Razor</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Oracle</td>
+            <td>Python</td>
+        </tr>
+        <tr>
+            <td>Vue</td>
+            <td>Angular</td>
+            <td>React</td>
+        </tr>
+    </table>
+
+    <br/><br/>
+    <table  style="border: 1px solid black;">
+        <tr>
+            <td>C#</td>
+            <td>ASP.NET</td>
+            <td>SQL Server</td>
+        </tr>
+        <tr>
+            <td>ADO.NET</td>
+            <td>ASP.NET MVC</td>
+            <td>Razor</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Oracle</td>
+            <td>Python</td>
+        </tr>
+        <tr>
+            <td>Vue</td>
+            <td>Angular</td>
+            <td>React</td>
+        </tr>
+    </table>
+
+    <br/><br/>
+    <div>
+        DIV 1
+        <br/>
+        <a href="#">Google inside DIV1</a>
+    </div>
+    <br/>    
+    <a href="#">Yahoo</a>
+    <br/>
+    <div>
+       DIV 2   
+
+    </div>
+
+    <br/><br/>
+    <span>SPAN 1</span>
+
+    <br/><br/>
+    <div>
+        DIV 3
+    </div>
+    
+</body>
+</html>

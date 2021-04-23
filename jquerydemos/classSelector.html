@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector Demo!</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        //Select all elements with class 'small' and set border 5px solid green
+           
+       // $(".small").css('border','5px solid green')
+
+         //Select all elements with class 'small' or'big' and set border 5px solid red
+        // $(".small,.big").css('border','5px solid red')
+
+         //Select all elements with class 'small' and all span elements with class big 
+         //and give 5px solid blue border.
+
+         $(".small,span.big").css('border','5px solid blue')
+
+        })
+    </script>
+</head>
+<body>
+    <span class="small">SPAN1</span> 
+    <br/><br/>
+    <div class="small">
+        DIV 1
+    </div>
+    <br/>
+    <br/>
+    <span class="big">SPAN 2</span>
+
+    <p class="big">This is a sample paragraph</p>
+</body>
+</html>

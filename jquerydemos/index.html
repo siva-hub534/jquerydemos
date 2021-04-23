@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Initial Demo</title>
+
+    <style>
+        #button1{
+            background-color: yellow;
+        }
+    </style>
+    
+    <script src="jquery-3.6.0.js"></script>
+    <script>     
+
+     /*
+        jQuery selectors allow you to select html elememnts in the dom by
+        1. Element ID
+        2. Element Tag Name
+        3. Element Class Name
+        4. Element Attribute
+     */
+    
+    $(document).ready(function(){
+     
+        $('#button1').click(function(){
+            alert('Hello jQuery');
+        })
+
+    });
+    
+    </script>
+</head>
+<body>
+    <input type="button" id="button1" value="Click Me"/>    
+   
+</body>
+</html>
